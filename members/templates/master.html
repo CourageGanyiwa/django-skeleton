@@ -4,6 +4,20 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    {% block content %} {% endblock %}
+    {% block content %}
+
+    <p><a href="/">HOME</a></p>
+
+    <h1>Members</h1>
+
+    <ul>
+      {% for x in mymembers %}
+      <li>
+        <a href="all_members.html/">{{ x.first_name }} {{ x.last_name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% endblock %}
   </body>
 </html>
