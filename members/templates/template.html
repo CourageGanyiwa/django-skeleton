@@ -3,7 +3,17 @@
 
 <html>
   <link rel="stylesheet" href="{% static 'myfirst.css' %}" />
-  <body>
+  <body
+    style="
+      background-color: rgb(9, 154, 203);
+      font-family: verdana;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    "
+  >
     <table border="1">
       <tr>
         <th>ID</th>
@@ -12,7 +22,7 @@
       </tr>
       {% for x in mymembers %}
       <tr>
-        <td>{{ x.id }}</td>
+        <td style="background-color: pink; border-radius: 3px">{{ x.id }}</td>
         <td>{{ x.first_name }}</td>
         <td>{{ x.last_name }}</td>
       </tr>
