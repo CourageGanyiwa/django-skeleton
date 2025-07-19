@@ -80,8 +80,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'masteruser',
-        'PASSWORD': os.environ.get(secrets.DATABASE_PASSWORD),
-        'HOST': os.environ.get(secrets.SECRET_KEY),
+        'PASSWORD': os.environ.get(DATABASE_PASSWORD),
+        'HOST': os.environ.get(SECRET_KEY),
         'PORT': '5432'
     }
 }
